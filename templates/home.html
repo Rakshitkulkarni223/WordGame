@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html>
+
+    <title>English Proficiency Tool HOME PAGE</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <body id="myPage">
+        <head>
+            <style>
+                .btn {
+                border: 2px solid black;
+                background-color: white;
+                color: black;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                }
+                /* Green */
+                .success {
+                border-color: #04AA6D;
+                color: green;
+                }
+                .success:hover {
+                background-color: #04AA6D;
+                color: white;
+                }
+                /* Blue */
+                .info {
+                border-color: #2196F3;
+                color: dodgerblue;
+                }
+                .info:hover {
+                background: #2196F3;
+                color: white;
+                }
+                /* Orange */
+                .warning {
+                border-color: #ff9800;
+                color: orange;
+                }
+                .warning:hover {
+                background: #ff9800;
+                color: white;
+                }
+                /* Red */
+                .danger {
+                border-color: #f44336;
+                color: red;
+                }
+                .danger:hover {
+                background: #f44336;
+                color: white;
+                }
+                /* Gray */
+                .default {
+                border-color: #e7e7e7;
+                color: black;
+                }
+                .default:hover {
+                background: #e7e7e7;
+                }
+            </style>
+        </head>
+
+        <!-- Sidebar on click -->
+        <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+            <i class="fa fa-remove"></i>
+            </a>
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#Dictionary" class="w3-bar-item w3-button">Dictionary</a>
+            <a href="#Begineer" class="w3-bar-item w3-button">Begineer</a>
+            <a href="#Learner" class="w3-bar-item w3-button">Learner</a>
+            <a href="#Intermediate-Word Game" class="w3-bar-item w3-button">Intermediate-Word Game</a>
+        </nav>
+
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme-d2 w3-left-align">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+                <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+                <a href="#Dictionary" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Dictionary</a>
+                <a href="#Begineer" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Begineer</a>
+                <a href="#Learner" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Learner</a>
+                <a href="#Intermediate-Word Game" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Intermediate-Word Game</a>
+            </div>
+        </div>
+
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="#Dictionary" class="w3-bar-item w3-button">Dictionary</a>
+            <a href="#Begineer" class="w3-bar-item w3-button">Begineer</a>
+            <a href="#Learner" class="w3-bar-item w3-button">Learner</a>
+            <a href="#Intermediate-Word Game" class="w3-bar-item w3-button">Intermediate-Word Game</a>
+        </div>
+
+        <!-- Image Header -->
+        <div class="w3-display-container w3-animate-opacity">
+            <img src="https://ejoy-english.com/blog/wp-content/uploads/2018/10/image.png" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+            <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+                <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">English Proficiency Tool</button>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-top">
+                <header class="w3-container w3-teal w3-display-container">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+                    <h4>Welcome to English Proficiency Tool</h4>
+                </header>
+                <div class="w3-container">
+                    <p>We have tried to make a <i >English Proficiency Tool</i> which will help children to interact and learn English Vocabulary in a fun way!!</p>
+                    <p>Website has been divided into following parts:</p>
+                    <ul>
+                        <li><a href="#Dictionary" class="w3-bar-item w3-button">Dictionary</a></li>
+                        <li><a href="#Begineer" class="w3-bar-item w3-button">Begineer</a></li>
+                        <li><a href="#Learner" class="w3-bar-item w3-button">Learner</a></li>
+                        <li><a href="#Intermediate-Word Game" class="w3-bar-item w3-button">Intermediate-Word Game</a></li>
+                    </ul>
+                </div>
+                <footer class="w3-container w3-teal">
+                    <p>Hope you Enjoy!!<i class="fa fa-smile-o"></i></p>
+                </footer>
+            </div>
+        </div>
+
+
+
+        <!-- Dictionary -->
+        <div class="w3-container w3-padding-64 w3-center" id="Dictionary">
+            <button style="color:green;" onclick="document.getElementById('id10').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">
+                <h2 style="color:green;"><b><u>DictionarY</u></b></h2>
+            </button>
+            <br><br><br>
+
+            <form  action="/word1" method="post">
+                <label for="word1">Enter the word:</label><br>
+                <input type="text" id="word1" name="word1" ><br><br>
+                <button type="submit" id="btn1">Submit</button>
+            </form>
+
+            <h4 style="font-family:verdana" > {{Meaning}}</h4>
+
+            <!-- Modal10 -->
+            <div id="id10" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-top">
+                    <header class="w3-container w3-teal w3-display-container">
+                    <span onclick="document.getElementById('id10').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+                    <h4>About Dictionary:</h4>
+                    <div class="w3-container">
+                        <ul>
+                            <li>User is requested to enter the word so that meaning of the word can be displayed.</li>
+                            <li>In case if the entered word is not found in the dictionary then list of similar type of words will be displayed.</li>
+                        </ul>
+                        <footer class="w3-container w3-teal">
+                            <p>Hope you Enjoy!!<i class="fa fa-smile-o"></i></p>
+                        </footer>
+                    </div>
+                    </header>
+                </div>
+            </div>
+
+
+
+
+
+        <!-- Begineer -->
+        <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="Begineer">
+            <button style="color:green;" onclick="document.getElementById('id11').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">
+                <h2 style="color:green;"><b><u>BegineeR</u></b></h2>
+            </button>
+            <br><br><br>
+            <form action="/word2_1" method="post">
+                <input type="submit" id="submit2_1" value="Lets Play!">
+                <!-- <button type="button" onclick="alert('Hello world!')">Lets Play!</button> -->
+            </form>
+            
+            <h4 id="letter">{{area_for_random_letter}}</h4>
+
+            <form action="/word2" method="post">
+                <label for="word2">Enter the next letter</label><br>
+                <input type="text" id="word2" name="word2" value=""><br><br>
+                <input type="submit" id="submit2" value="Submit">
+            </form>
+            <h4 style="font-family:verdana" > {{Next_word}}</h4>
+
+            <!-- Modal10 -->
+            <div id="id11" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-top">
+                    <header class="w3-container w3-teal w3-display-container">
+                    <span onclick="document.getElementById('id11').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+                    <h4>About Begineer:</h4>
+                    <div class="w3-container">
+                        <ul>
+                            <li>In this section on clicking "Lets Play"button a random letter will be printed on screen and user will be rquested to enter the immediate next letter,if done right "correct" will be printed on the scren  else "wrong".  </li>
+                        </ul>
+                        <footer class="w3-container w3-teal">
+                            <p>Hope you Enjoy!!<i class="fa fa-smile-o"></i></p>
+                        </footer>
+                    </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Container -->
+        <div class="w3-container" style="position:relative">
+            <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+                style="position:absolute;top:-28px;right:24px">+</a>
+        </div>
+
+
+
+        <!-- Learner -->
+        <div class="w3-row-padding w3-center w3-padding-64" id="Learner">
+        <button style="color:green;" onclick="document.getElementById('id12').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">
+            <h2 style="color:green;"><b><u>LearneR</u></b></h2>
+        </button>
+        <br><br><br>
+        <form action="/word3" method="post">
+            <label for="word3">Enter the length of word</label><br>
+            <input type="text" id="word3" name="word3" value=""><br><br>
+            <input type="submit" id="submit3" value="Submit">
+        </form>
+        <h4 style="font-family:verdana" > {{words}}</h4>
+        <!-- Modal10 -->
+        <div id="id12" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-top">
+                <header class="w3-container w3-teal w3-display-container">
+                <span onclick="document.getElementById('id12').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+                <h4>About Learner:</h4>
+                <div class="w3-container">
+                    <ul>
+                        <li>In this section user is requsted to enter the length of the word  and then  random 5 words will be printed on screen</li>
+                    </ul>
+                    <footer class="w3-container w3-teal">
+                        <p>Hope you Enjoy!!<i class="fa fa-smile-o"></i></p>
+                    </footer>
+                </div>
+            </header>
+            </div>
+        </div>
+
+
+
+        <!-- Intermediate-Word Game -->
+        <div class="w3-container w3-padding-64 w3-theme-l5" id="Intermediate-Word Game">
+        <button style="color:green;" onclick="document.getElementById('id13').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">
+            <h2 style="color:green;"><b><u>Intermediate-Word Game</u></b></h2>
+        </button>
+        <br><br><br>
+        <h4>Select letters:</h4>
+
+        <form action="/word4" method="post">
+            <input type="submit" name="A" value="A" class="btn success"/>
+            <input type="submit"  name="B" value="B" class="btn success"/>
+            <input type="submit"  name="C" value="C" class="btn success"/>
+            <input type="submit"  name="D" value="D" class="btn success"/>
+            <input type="submit"  name="E" value="E" class="btn success"/>
+            <input type="submit"  name="F" value="F" class="btn success"/>
+            <br>
+            <input type="submit"  name="G" value="G" class="btn info"/>
+            <input type="submit"  name="H" value="H" class="btn info"/>
+            <input type="submit"  name="I" value="I" class="btn info"/>
+            <input type="submit"  name="J" value="J" class="btn info"/>
+            <input type="submit"  name="K" value="K" class="btn info"/>
+            <input type="submit"  name="L" value="L" class="btn info"/>
+            <br>
+            <input type="submit"  name="M" value="M" class="btn warning"/>
+            <input type="submit"  name="N" value="N" class="btn warning"/>
+            <input type="submit"  name="O" value="O" class="btn warning"/>
+            <input type="submit"  name="P" value="P" class="btn warning"/>
+            <input type="submit"  name="Q" value="Q" class="btn warning"/>
+            <input type="submit"  name="R" value="R" class="btn warning"/>
+            <br>
+            <input type="submit"  name="S" value="S" class="btn danger"/>
+            <input type="submit"  name="T" value="T" class="btn danger"/>
+            <input type="submit"  name="U" value="U" class="btn danger"/>
+            <input type="submit"  name="V" value="V" class="btn danger"/>
+            <input type="submit"  name="W" value="W" class="btn danger"/>
+            <input type="submit"  name="X" value="X" class="btn danger"/>
+            <input type="submit"  name="Y" value="Y" class="btn danger"/>
+            <input type="submit"  name="Z" value="Z" class="btn danger"/>
+        </form>
+        
+        
+        <br><br><br><br><br>
+
+        <h4 style="font-family:verdana" > {{Letter}}</h4>
+
+        <br><br><br><br><br>
+        <form action="/word4_1" method="post">
+            <label for="word4">Enter the length of the word:</label><br>
+            <input type="text" id="word4" name="word4" value=""><br><br>
+            <input type="submit" id="submit4" value="Submit">
+        </form>
+        <h4 style="font-family:verdana" > {{words_meaning}}</h4>
+
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+
+
+        <!-- Modal10 -->
+        <div id="id13" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-top">
+                <header class="w3-container w3-teal w3-display-container">
+                <span onclick="document.getElementById('id13').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+                <h4>About Word Game:</h4>
+                <div class="w3-container">
+                    <ul>
+                        <li>In this user is supposed to click on the Encircled letters to select the letters and after asking length of the word all the meaningful words with their meaning will be displayed on the screen.Also words with no meaning will be omitted.</li>
+                    </ul>
+                    <footer class="w3-container w3-teal">
+                        <p>Hope you Enjoy!!<i class="fa fa-smile-o"></i></p>
+                    </footer>
+                </div>
+            </header>
+            </div>
+        </div>
+
+
+
+        <!-- Image of location/map -->
+        <img src="https://lh3.googleusercontent.com/Yefkdy_3tWcMQGS7aamUIokWMK5EIsxFesmoSgvbxw9Kzeq45Gaur-CivtacxkGIxx0" style="height:500px; width:100%;">
+
+
+
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+            <h4>Follow Us</h4>
+            <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/NITKarnataka/" title="Facebook" target="_blank"><i class="fa fa-facebook" ></i></a>
+            <a class="w3-button w3-large w3-teal" href="https://twitter.com/surathkal_nitk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="w3-button w3-large w3-teal" href="https://www.youtube.com/channel/UCrYljZ7p47MVeMn4hEFZe2w" title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/nitk.surathkal/?hl=en" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/school/nitk-surathkal/?originalSubdomain=in" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <p>Makers: <a>Mohit,Rakshit and Anshul.</a></p>
+            <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+                <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+                <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+                <i class="fa fa-chevron-circle-up"></i></span></a>
+            </div>
+        </footer>
+
+
+
+        <script>
+            // Script for side navigation
+            function w3_open() {
+              var x = document.getElementById("mySidebar");
+              x.style.width = "300px";
+              x.style.paddingTop = "10%";
+              x.style.display = "block";
+            }
+
+            // Close side navigation
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+
+            // Used to toggle the menu on smaller screens when clicking on the menu button
+            function openNav() {
+              var x = document.getElementById("navDemo");
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+              } else {
+                x.className = x.className.replace(" w3-show", "");
+              }
+            }
+
+            function scroll() 
+            {
+                alert("sf")
+                return true
+                
+            }
+
+
+
+        </script>
+
+    </body>
+
+</html>
